@@ -55,7 +55,7 @@ app.post("/", function (request, response) {
   </div>
 `);
 
-      response.send(Response);
+     
     }
   });
 });
