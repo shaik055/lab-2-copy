@@ -1,10 +1,3 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
-  "routes": [
-    {
-      "src": "/",
-      "methods": ["POST", "GET"],
-      "dest": "/weatherapp.js"
-    }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
 }
