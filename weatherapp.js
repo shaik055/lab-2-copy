@@ -2,6 +2,9 @@ const unirest = require("unirest");
 const express = require("express");
 const bodyText = require("body-parser");
 
+const cors = require("cors");
+app.use(cors());
+
 const app = express();
 app.use(bodyText.urlencoded({ extended: true })); //To use body parser with post request
 
