@@ -2,10 +2,8 @@ const unirest = require("unirest");
 const express = require("express");
 const bodyText = require("body-parser");
 
-
 const app = express();
 app.use(bodyText.urlencoded({ extended: true })); //To use body parser with post request
-
 
 //include all static files so we can use CSS
 app.use(express.static(__dirname + "/public"));
@@ -25,7 +23,7 @@ app.get("/", function (req, res) {
 });
 
 // Display the information when there is post request
-app.post("/", function (request, response) {
+app.post("/weather", function (request, response) {
   //Get the weather data
   const req = unirest(
     "GET",
