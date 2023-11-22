@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "vercel-build": "npm install"
+  },
+  "vercel": {
+    "builds": [{ "src": "public/**", "use": "@vercel/node" }],
+    "routes": [
+      { "handle": "vercel-build" },
+      { "src": "/api/(.*)", "dest": "/api/$1.js" },
+      { "src": "/(.*)", "dest": "/$1" }
+    ]
+  }
+}
