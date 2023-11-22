@@ -8,6 +8,15 @@ app.use(bodyText.urlencoded({ extended: true })); //To use body parser with post
 //include all static files so we can use CSS
 app.use(express.static(__dirname + "/public"));
 
+app.all("/", function (req, res, next) {
+  if (
+    req.method.toLowerCase() !== "get" &&
+    req.method.toLowerCase() !== "post"
+  ) {
+    return res.sendStatus(405); // Method Not Allowed
+  }
+  next();
+});
 //main page
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/public/index.html");
@@ -54,8 +63,6 @@ app.post("/", function (request, response) {
     </div>
   </div>
 `);
-
-     
     }
   });
 });
