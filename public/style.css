@@ -1,0 +1,41 @@
+/* update this file */
+body {
+  background-color: lightyellow;
+  text-align: center;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+
+.weather-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.city-heading {
+  font-size: 36px;
+  color: red;
+}
+
+.weather-details {
+  font-size: 20px;
+}
+
+.temperature {
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+.humidity {
+  margin-top: 10px;
+}
+
+.max-temperature {
+  margin-top: 10px;
+}
