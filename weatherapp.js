@@ -57,8 +57,8 @@ app.post("/weather", function (request, response) {
     <h2 class="city-heading">Current Weather in ${city}</h2>
     <div class="weather-details">
       <p class="temperature">Temperature: ${weather.main.temp} °F</p>
-      <p class="description">Description: ${weather.main[0].description}</p>
-      <p class="humidity">Humidity: ${weather.main.humidity}%</p>
+      <p class="description">Description: ${weather?.main[0]?.description}</p>
+      <p class="humidity">Humidity: ${weather?.main?.humidity}%</p>
       
     </div>
   </div>
