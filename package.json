@@ -4,7 +4,8 @@
   "description": "In this lab you will build a weather app using Node.js and API calls.",
   "main": "weatherapp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node api/weatherapp.js"
   },
   "author": "",
   "license": "ISC",
