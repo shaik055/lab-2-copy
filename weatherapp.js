@@ -2,11 +2,8 @@ const unirest = require("unirest");
 const express = require("express");
 const bodyText = require("body-parser");
 
-const cors = require("cors");
-
 const app = express();
 app.use(bodyText.urlencoded({ extended: true })); //To use body parser with post request
-app.use(cors({ origin: "*" }));
 
 //include all static files so we can use CSS
 app.use(express.static(__dirname + "/public"));
