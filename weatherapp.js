@@ -67,3 +67,5 @@ let port = process.env.PORT || 8002;
 app.listen(port, function () {
   console.log("Server running on port 8002");
 });
+
+module.exports = app;

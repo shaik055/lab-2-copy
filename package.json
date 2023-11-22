@@ -5,7 +5,8 @@
   "main": "weatherapp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node api/weatherapp.js"
+    "start": "node api/index.js",
+    "vercel-build": "echo hello"
   },
   "author": "",
   "license": "ISC",
